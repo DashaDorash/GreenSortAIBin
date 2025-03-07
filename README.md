@@ -45,6 +45,11 @@ Recycling rules vary across locations, leading to confusion and improper waste d
 - **PC** – Runs the AI classification and sends control signals
 
 ---
+### Demo:
+
+[Watch the video]([https://raw.githubusercontent.com/username/repository/branch/video-file.mp4](https://vimeo.com/manage/videos/1063425646))
+
+---
 ### Contributors:
 - **Dasha Dorash** – https://github.com/DashaDorash
 - **Saniya Mukhambetkaliyeva** – https://github.com/Saniya05m
