@@ -1,6 +1,6 @@
 #include <Stepper.h>
 
-// Stepper setup (example pins)
+
 const int stepsPerRevolution = 2048;
 Stepper stepperMotor(stepsPerRevolution, 8, 10, 9, 11);
 
@@ -14,37 +14,31 @@ void setup() {
   stepperMotor.setSpeed(10);
 }
 
-// A small debounce technique
+
 unsigned long lastPressTime = 0;
 const unsigned long debounceDelay = 50;  // 50ms
 
 void loop() {
-  // ------------------
-  // 1) Check button in a non-blocking way
-  // ------------------
+
   bool buttonState = (digitalRead(buttonPin) == LOW); // LOW = pressed, due to INPUT_PULLUP
   unsigned long currentTime = millis();
   
   if (buttonState && !buttonPressed && (currentTime - lastPressTime > debounceDelay)) {
-    // Button was *just* pressed
+
     buttonPressed = true;
     lastPressTime = currentTime;
     
-    // Send a message to Python immediately
+
     Serial.println("P");
     
-    // (Don't block here; just note that we sent it.)
+
     
   } else if (!buttonState && buttonPressed) {
-    // Button was just released
+
     buttonPressed = false;
-    // We can do something else upon release if we want.
+
   }
   
-  // ------------------
-  // 2) Always check if Python sent a command
-  // ------------------
-  // Use a *while* loop to read everything in the buffer
   while (Serial.available() > 0) {
     // Read a line from Serial
     String command = Serial.readStringUntil('\n');
@@ -64,7 +58,6 @@ void loop() {
     }
   }
 
-  // ... normal loop continues without blocking ...
 }
 
 void rotateMotor() {
