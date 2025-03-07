@@ -42,7 +42,7 @@ Recycling rules vary across locations, leading to confusion and improper waste d
 - **Arduino** – Controls the motorized bin lid
 - **Camera (Webcam/Raspberry Pi Cam)** – Captures waste images
 - **Stepper Motor** – Rotates the bin lid based on AI classification
-- **Raspberry Pi / PC** – Runs the AI classification and sends control signals
+- **PC** – Runs the AI classification and sends control signals
 
 ---
 ### Contributors:
