@@ -1,0 +1,3 @@
+opencv-python         # For image capture
+pyserial              # For Arduino serial communication
+inference-sdk         # For Roboflow API inference
