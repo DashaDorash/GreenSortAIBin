@@ -47,7 +47,7 @@ Recycling rules vary across locations, leading to confusion and improper waste d
 ---
 ### Demo:
 
-[Watch the video]([https://raw.githubusercontent.com/username/repository/branch/video-file.mp4](https://vimeo.com/manage/videos/1063425646))
+[Watch the video]([https://vimeo.com/manage/videos/1063425646](https://vimeo.com/manage/videos/1063425646))
 
 ---
 ### Contributors:
